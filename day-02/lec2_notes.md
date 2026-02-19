@@ -132,10 +132,10 @@ A REST API is a type of Web API that follows a set of architectural rules called
 
 - RULES
     - Client Server Separation
-        client send req, display res  && Server process req and send res.
+        - client send req, display res  && Server process req and send res.
 
     - Stateless
-        Server does not remember previous requests. Each req carries token/session info. This makes it Scalable.
+        -   Server does not remember previous requests. Each req carries token/session info. This makes it Scalable.
 
     - Use HTTP Methods properly
     
@@ -151,7 +151,7 @@ A REST API is a type of Web API that follows a set of architectural rules called
 
     - Use Standard HTTP Status Codes
 
-        REST APIs must return proper HTTP status codes to indicate the result of a request.
+        - REST APIs must return proper HTTP status codes to indicate the result of a request.
 
         | Code | Meaning        | When It Is Used Example                          |
         |------|---------------|--------------------------------------------------|
@@ -163,12 +163,13 @@ A REST API is a type of Web API that follows a set of architectural rules called
         | 404  | Not Found     | `GET /users/99` user does not exist              |
         | 500  | Server Error  | Something broke on server side                   |
 
-        2xx → Success
-        4xx → Client mistake
-        5xx → Server mistake
+        *** 2xx → Success ***, 
+        *** 4xx → Client mistake ***, 
+        *** 5xx → Server mistake *** 
+
 
     - Data Representation usually in JSON
-        JavaScript Object Notation - key value pair - type(dict)
+        - JavaScript Object Notation - key value pair - type(dict)
 
 ```
 import requests
